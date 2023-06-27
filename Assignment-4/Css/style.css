@@ -1,14 +1,8 @@
-body {
-    overflow-x: hidden;
-    margin: auto;
-    padding: 0;
-}
-.main {
+.container {
     max-width: 1350px;
-    background-color: #fdfeff;
-    border-radius: 20px;
-    margin: auto;
+    margin: 0 auto;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -26,20 +20,20 @@ nav {
     display: flex;
     list-style: none;
 }
-.nav ul {
+nav ul {
     text-align: center;
     margin: 0;
     padding: 0;
 }
-.nav li {
+nav li {
     padding: 20px;
     list-style: none;
     display: inline-block;
 }
-.nav h4 {
-    padding: 50px 100px 20px 0px;
+nav h3 {
+    padding: 30px 100px 20px 0px;
 }
-.nav a {
+nav a {
     text-decoration: none;
     color: #000;
     display: block;
@@ -47,6 +41,7 @@ nav {
 .banner {
     width: 100%;
     height: 100vh;
+    padding-bottom: 0%;
 }
 .banner .banner-image {
     padding-left: 200px;
@@ -112,7 +107,7 @@ nav {
 .services-headline {
     display: flex;
 }
-.line {
+.services-headline hr {
     border: none;
     border-top: 2px solid black;
     margin: 40px 40px 10px 0;
@@ -175,6 +170,7 @@ nav {
 .about-count-p {
     margin-top: -30px;
     font-size: 17px;
+    padding-bottom: 50px;
 }
 .about-details-main {
     display: flex;
@@ -192,22 +188,25 @@ nav {
 }
 .button {
     border: #97989a solid 2px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 .button-arrow {
     color: #797a7c;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: lighter;
+    margin: -20px 0px 40px 130px;
 }
 .process {
-    margin: 0px;
+    margin: 0 auto;
     padding-top: 50px;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
 }
 .process-details {
-    padding: 0px 300px 150px 0px;
+    padding: 0px 0px 50px 0px;
+    flex: 1;
 }
 .circle-counter {
     display: block;
@@ -216,19 +215,21 @@ nav {
 .circle-counter p {
     text-align: center;
     color: #c0d1d8;
-    line-height: 20px;
+    line-height: 10px;
 }
 .counter {
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: #5d6e78;
+    text-align: center;
+    padding: 1px;
 }
 .line {
     width: 2px;
     height: 85px;
     background-color: gray;
-    margin-left: -970px;
+    margin-left: 19px;
 }
 .process-contain {
     display: flex;
@@ -239,7 +240,7 @@ nav {
 .process-details li {
     list-style: none;
     position: relative;
-    padding: 0px 50px 0px 70px;
+    padding: 0px 0px 0px 70px;
 }
 .process-details h2 {
     font-size: 40px;
@@ -248,20 +249,18 @@ nav {
 .process-details h3 {
     font-size: 25px;
     font-weight: 900;
+    margin-top: -4px;
 }
-.process-list-image {
-    display: flex;
-    flex-grow: 1;
-}
-.process-image {
-    margin-top: 1500px;
+.procees-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: -50px;
 }
-.process-image img {
-    width: 1000px;
-    height: 1500px;
+.procees-image img {
+    flex: 1;
+    width: 400px;
+    height: 500px;
 }
 .review {
     width: 100%;
@@ -359,32 +358,35 @@ nav {
 footer {
     background-color: #5a6e79;
 }
-.footer {
+.footer-inner-div {
     max-width: 1350px;
     padding-bottom: 50px;
     padding-right: 0;
-    z-index: 1;
     margin: 0 auto;
+    position: relative;
 }
 .subscribe-box {
-    background-color: #ffffff;
-    margin-left: 200px;
+    position: absolute;
+    background-color: #eee9e9;
+    margin-left: 250px;
     box-shadow: #cacbcc;
     width: 800px;
     height: 50px;
     display: flex;
-    margin-top: -50px;
-    padding-right: 20px;
-    z-index: 1;
+    margin-top: -20px;
+    padding-right: 0px;
+    box-shadow: #ffffff;
+
 }
 .subscribe-button {
     background-color: #5a6e79;
     text-align: center;
-    width: 100px;
+    width: 200px;
     height: 40px;
     width: 70px;
     height: 30px;
     color: #fdfeff;
+    margin-top: 10px;
 }
 .subscribe-box a {
     text-decoration: none;
@@ -400,7 +402,6 @@ footer {
 }
 .footer-list {
     display: flex;
-    /* padding-top: 50px; */
     color: #e1f0f7;
     text-indent: 30px;
 }
@@ -426,7 +427,7 @@ footer {
 }
 .footer-about-headline {
     font-size: 25px;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 0;
     align-items: center;
 }
@@ -439,4 +440,164 @@ footer {
     text-indent: 20px;
     padding-left: 20px;
     text-decoration: none;
+}
+.social-media {
+    padding-left: -5px;
+    padding-top: 30px;
+    font-size: 30px;
+    justify-content: space-around;
+}
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding-bottom: 20px;
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+
+    nav h3 {
+        font-size: 18px;
+        padding-left: 30px;
+    }
+
+    nav li {
+        padding: 10px;
+    }
+
+    .banner .banner-image {
+        padding-left: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner .banner-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner .banner-text h2 {
+        font-size: 24px;
+    }
+
+    .banner .banner-text p {
+        font-size: 14px;
+    }
+
+    .service-description {
+        margin-bottom: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .about-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about .about-details-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about-details {
+        margin-bottom: 20px;
+    }
+
+    .about .button {
+        margin-bottom: 20px;
+    }
+
+    .process .process-contain {
+        flex-direction: column;
+    }
+
+    .process .circle-counter {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .process .counter {
+        margin-bottom: 10px;
+    }
+
+    .process .process-list {
+        margin-top: 20px;
+    }
+
+    .review .review-block {
+        flex-direction: column;
+    }
+
+    .review .review-details {
+        margin-bottom: 20px;
+    }
+
+    .review .user {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .review .user img {
+        margin-bottom: 10px;
+    }
+
+    .subscribe {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-inner-div {
+        flex-direction: column;
+    }
+
+    .footer-list {
+        margin-bottom: 20px;
+    }
+
+    .footer-list ul {
+        margin-bottom: 10px;
+    }
+
+    .footer-list ul li {
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding-left: 50px;
+    }
+
+    .banner {
+        padding-right: 100px;
+    }
+
+    .serices {
+        margin-top: 100px;
+    }
+
+    .services-headline {
+        margin: 70px 40px 10px 0px;
+    }
+
+    .services-headline h2 {
+        margin: 20px 20px 10px 0;
+        line-height: 30px;
+        font-size: 30px;
+    }
+}
+@media(max-width:320px) {
+    nav {
+        display: block;
+    }
 }
