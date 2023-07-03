@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Albert+Text:ital,wght@0,400;0,700;1,400&amp;display=swap">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Albert+Text:ital,wght@0,400;0,700;1,400&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -24,12 +24,16 @@
             <header>
                 <nav id="navLinks">
                     <h3>Luxterior</h3>
+                    <input type="checkbox" id="checking">
                     <ul class="center-nav">
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Features</a></li>
                         <li><a href="">Contacts</a></li>
                     </ul>
+                    <label for="checking" class="checkbutton">
+                        <li><i class="material-icons">menu</i></li>
+                    </label>
                     <ul class="right-nav">
                         <li><i class="fa fa-search"></i></li>
                         <li><i class="material-icons">menu</i></li>
@@ -99,20 +103,18 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="banner-text">
-        <h2>
-            We help you<br>
-            make modern <br>
-            interior
-        </h2>
-        <p>
-            We will help you to make an elegant<br>
-            and luxurious interior designed by <br>
-            professional interior designers
-        </p>
-    </div>
-    <div class="container">
+        <div class="banner-text">
+            <h2>
+                We help you<br>
+                make modern <br>
+                interior
+            </h2>
+            <p>
+                We will help you to make an elegant<br>
+                and luxurious interior designed by <br>
+                professional interior designers
+            </p>
+        </div>
         <div class="about">
             <img src="images/About.jpg" alt="This image can't be loaded">
             <div class="about-text">
@@ -274,101 +276,103 @@
         </div>
     </div>
     <footer>
-        <div class="subscribe-box">
-            <input type="text" placeholder="enter your email address">
-            <a class="subscribe-button" href="#">
-                <p>Subscribe</p>
-            </a>
-        </div>
-        <div class="footer-contents">
-            <div class="footer-about">
-                <h4 class="footer-about-headline">Luxterior</h4>
-                <p class="footer-about-description">We will help you to make an elegant and <br>
-                    luxurious interior designed by a<br>
-                    professional interior designer.
-                </p>
+        <div class="container">
+            <div class="subscribe-box">
+                <input type="text" placeholder="enter your email address">
+                <a class="subscribe-button" href="#">
+                    <p>Subscribe</p>
+                </a>
             </div>
-            <div class="footer-list">
-                <ul>
-                    <li>
-                        <h6>
-                            About
-                        </h6>
-                    </li>
-                    <li>
-                        <a href="">About us</a>
-                    </li>
-                    <li>
-                        <a href="">Features</a>
-                    </li>
-                    <li>
-                        <a href="">News</a>
-                    </li>
-                    <li>
-                        <a href="">Careers</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h6>
-                            Company
-                        </h6>
-                    </li>
-                    <li>
-                        <a href="">Our team</a>
-                    </li>
-                    <li>
-                        <a href="">Partner with us</a>
-                    </li>
-                    <li>
-                        <a href="">FaQ</a>
-                    </li>
-                    <li>
-                        <a href="">Blog</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h6>
-                            Support
-                        </h6>
-                    </li>
-                    <li>
-                        <a href="">Account</a>
-                    </li>
-                    <li>
-                        <a href="">Support center</a>
-                    </li>
-                    <li>
-                        <a href="">Feedback</a>
-                    </li>
-                    <li>
-                        <a href="">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="">Accesability</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h6>
-                            Get in touch
-                        </h6>
-                    </li>
-                    <li>
-                        <a href="">Question or feedback</a>
-                    </li>
-                    <li>
-                        <a href="">We'd love to hear from you</a>
-                    </li>
-                    <li>
-                        <div class="social-media">
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </li>
-                </ul>
+            <div class="footer-contents">
+                <div class="footer-about">
+                    <h4 class="footer-about-headline">Luxterior</h4>
+                    <p class="footer-about-description">We will help you to make an elegant and <br>
+                        luxurious interior designed by a<br>
+                        professional interior designer.
+                    </p>
+                </div>
+                <div class="footer-list">
+                    <ul>
+                        <li>
+                            <h6>
+                                About
+                            </h6>
+                        </li>
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="">Features</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Careers</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h6>
+                                Company
+                            </h6>
+                        </li>
+                        <li>
+                            <a href="">Our team</a>
+                        </li>
+                        <li>
+                            <a href="">Partner with us</a>
+                        </li>
+                        <li>
+                            <a href="">FaQ</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h6>
+                                Support
+                            </h6>
+                        </li>
+                        <li>
+                            <a href="">Account</a>
+                        </li>
+                        <li>
+                            <a href="">Support center</a>
+                        </li>
+                        <li>
+                            <a href="">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="">Accesability</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h6>
+                                Get in touch
+                            </h6>
+                        </li>
+                        <li>
+                            <a href="">Question or feedback</a>
+                        </li>
+                        <li>
+                            <a href="">We'd love to hear from you</a>
+                        </li>
+                        <li>
+                            <div class="social-media">
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
