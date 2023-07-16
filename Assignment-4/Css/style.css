@@ -65,52 +65,16 @@ nav a {
     position: relative;
 }
 
-.banner::before {
-    content: '';
-    position: absolute;
-    background-color: #5a6e79;
-    width: 100%;
-    height: 35%;
-    top: 28%;
-    left: -1000px;
-    z-index: 1;
-}
-
 .banner .banner-image {
     padding-left: 180px;
     width: 85%;
-    height: 100%;
+    height: 700px;
     z-index: 0;
 }
 
 .banner-image img {
     height: 100%;
     width: 100%;
-}
-
-.banner h2,
-.banner p {
-    position: absolute;
-    z-index: 2;
-    color: #eaf1fb;
-    top: 50%;
-}
-
-.banner h2 {
-    position: absolute;
-    margin-bottom: 20%;
-    width: 20%;
-    font-size: 39px;
-    line-height: 45px;
-    top: 340px;
-}
-
-.banner p {
-    position: absolute;
-    top: 485px;
-    width: 21%;
-    font-size: 20px;
-    line-height: 27px;
 }
 
 .banner-image::after {
@@ -125,7 +89,7 @@ nav a {
     right: 0;
     transform: translate(2%, 20%);
     width: 15%;
-    height: 18%;
+    height: 23%;
     z-index: 1;
 }
 
@@ -134,11 +98,42 @@ nav a {
     border: 2px solid black;
     position: absolute;
     width: 15%;
-    height: 19%;
+    height: 23%;
     z-index: -1;
     bottom: 0;
     left: 0;
-    transform: translate(70%, 15%);
+    transform: translate(66%, 26%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 24%;
+    z-index: 1;
+    color: #e0e7ed;
+}
+
+.banner-text::before {
+    content: '';
+    position: absolute;
+    background-color: #5a6e79;
+    width: 130%;
+    height: 110%;
+    transform: translate(-70%);
+    z-index: -1;
+}
+
+.banner-text h2 {
+    font-size: 45px;
+    width: 30%;
+    line-height: 60px;
+    margin-top: 47px;
+}
+
+.banner-text p {
+    font-size: 22px;
+    width: 38%;
+    line-height: 30px;
+    margin-top: 20px;
 }
 
 .services {
@@ -658,16 +653,6 @@ footer .container {
         margin: 0 18px;
     }
 
-    .banner::before {
-        content: '';
-        position: absolute;
-        background-color: #5a6e79;
-        width: 126%;
-        height: 35%;
-        top: 36%;
-        left: -1000px;
-        z-index: 1;
-    }
 
     .banner-image::before {
         transform: translate(44%, 15%);
@@ -676,19 +661,7 @@ footer .container {
     .banner .banner-image {
         padding-left: 115px;
         width: 85%;
-        height: 100%;
-    }
-
-    .banner h2 {
-        font-size: 30px;
-        line-height: 35px;
-        top: 368px;
-    }
-
-    .banner p {
-        font-size: 17px;
-        line-height: 21px;
-        top: 480px;
+        height: 700px;
     }
 
     .services-headline h2 {
@@ -804,7 +777,6 @@ footer .container {
 
     .review h2 {
         font-size: 45px;
-        width: 41%;
     }
 
     .subscription-alert {
@@ -858,17 +830,6 @@ footer .container {
         margin: 0 16px;
     }
 
-    .banner::before {
-        content: '';
-        position: absolute;
-        background-color: #5a6e79;
-        width: 126%;
-        height: 35%;
-        top: 36%;
-        left: -1000px;
-        z-index: 1;
-    }
-
     .banner-image::before {
         transform: translate(56%, 15%);
     }
@@ -876,19 +837,14 @@ footer .container {
     .banner .banner-image {
         padding-left: 115px;
         width: 85%;
-        height: 100%;
+        height: 600px;
     }
 
-    .banner h2 {
-        font-size: 29px;
-        line-height: 29px;
-        top: 300px;
-    }
-
-    .banner p {
-        font-size: 17px;
-        line-height: 21px;
-        top: 416px;
+    .banner-text h2 {
+        font-size: 39px;
+        width: 31%;
+        line-height: 43px;
+        margin-top: 27px;
     }
 
     .services-headline h2 {
@@ -902,7 +858,7 @@ footer .container {
     }
 
     .service-description h3 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .row {
@@ -993,7 +949,7 @@ footer .container {
         width: 3px;
         height: 140%;
         top: 10%;
-        left: 9%;
+        left: 7%;
         background-color: #000;
         position: absolute;
     }
@@ -1054,7 +1010,7 @@ footer .container {
     }
 }
 
-@media (min-width: 768px) and (max-width:900px) {
+@media (min-width: 769px) and (max-width:900px) {
     .container {
         margin: 0 16px;
     }
@@ -1067,19 +1023,8 @@ footer .container {
         height: 100%;
     }
 
-    .banner::before {
-        content: '';
-        position: absolute;
-        background-color: #5a6e79;
-        width: 150%;
-        height: 46%;
-        top: 28%;
-        left: -1000px;
-        z-index: 1;
-    }
-
     .banner .banner-image {
-        height: 580px;
+        height: 500px;
         padding-left: 90px;
     }
 
@@ -1087,23 +1032,19 @@ footer .container {
         transform: translate(47%, 15%);
     }
 
-    .banner i {
-        left: 722px;
-        font-size: 50px;
-        top: 524px;
+    .banner-text {
+        top: 18%;
     }
 
-    .banner h2 {
-        left: 0px;
-        top: 168px;
-        line-height: 31px;
-        font-size: 25px;
+    .banner-text h2 {
+        font-size: 36px;
+        width: 35%;
+        line-height: 37px;
+        margin-top: 30px;
     }
 
-    .banner p {
-        font-size: 16px;
-        line-height: 22px;
-        top: 268px;
+    .banner-text p {
+        font-size: 17px;
     }
 
     .services {
@@ -1275,7 +1216,7 @@ footer .container {
 
     .checkbutton {
         display: block;
-        margin-left: -15px;
+        margin-left: -19px;
     }
 
     .center-nav {
@@ -1296,7 +1237,7 @@ footer .container {
     }
 
     .right-nav {
-        margin-left: 277px;
+        margin-left: 247px;
         font-size: 20px;
     }
 
@@ -1316,7 +1257,7 @@ footer .container {
 
     .banner .banner-image {
         width: 100%;
-        height: 480px;
+        height: 450px;
         object-fit: cover;
         padding-left: 0;
     }
@@ -1329,20 +1270,18 @@ footer .container {
         display: none;
     }
 
-    .banner i {
-        display: none;
+    .banner-text h2 {
+        font-size: 24px;
+        width: 30%;
+        line-height: 27px;
+        margin-top: 29px;
     }
 
-    .banner::before {
-        display: none;
-    }
-
-    .banner h2 {
-        display: none;
-    }
-
-    .banner p {
-        display: none;
+    .banner-text p {
+        font-size: 13px;
+        width: 38%;
+        line-height: 13px;
+        margin-top: 11px;
     }
 
     .services-headline h2 {
@@ -1720,37 +1659,18 @@ footer .container {
         display: none;
     }
 
-    .banner i {
-        display: none;
-    }
-
-    .banner::before {
-        content: '';
-        position: absolute;
-        background-color: #5a6e79;
-        width: 55%;
-        height: 57%;
-        top: 55%;
-        left: 80px;
-        z-index: 1;
-    }
-
-    .banner h2 {
-        text-align: center;
-        top: 191px;
-        left: 24%;
-        width: 50%;
-        line-height: 22px;
+    .banner-text h2 {
         font-size: 20px;
+        width: 38%;
+        line-height: 25px;
+        margin-top: 7px;
     }
 
-    .banner p {
-        text-align: center;
-        left: 25%;
-        top: 250px;
-        width: 51%;
-        font-size: 12px;
-        line-height: 13px;
+    .banner-text p {
+        font-size: 10px;
+        width: 35%;
+        line-height: 16px;
+        margin-top: 9px;
     }
 
     .services-headline {
@@ -1957,7 +1877,7 @@ footer .container {
     .process-list p::before {
         height: 100%;
         top: 3%;
-        left: -9%;
+        left: -8%;
     }
 
     .review h2 {
@@ -2139,7 +2059,7 @@ footer .container {
 
     .banner .banner-image {
         width: 100%;
-        height: 280px;
+        height: 250px;
         object-fit: cover;
         padding-left: 0;
     }
@@ -2152,42 +2072,24 @@ footer .container {
         display: none;
     }
 
-    .banner i {
-        display: none;
+    .banner-text h2 {
+        font-size: 17px;
+        width: 39%;
+        line-height: 20px;
+        margin-top: 11px;
     }
 
-    .banner::before {
-        content: '';
-        position: absolute;
-        background-color: #5a6e79;
-        width: 55%;
-        height: 52%;
-        top: 60%;
-        left: 75px;
-        z-index: 1;
-    }
-
-    .banner h2 {
-        text-align: center;
-        top: 175px;
-        left: 27%;
-        width: 50%;
-        line-height: 22px;
-        font-size: 20px;
-    }
-
-    .banner p {
-        text-align: center;
-        left: 27%;
-        top: 245px;
-        width: 51%;
-        font-size: 12px;
-        line-height: 13px;
+    .banner-text p {
+        font-size: 9px;
+        width: 38%;
+        line-height: 10px;
+        margin-top: 5px;
     }
 
     .services-headline {
         align-items: center;
         width: 100%;
+        margin-top: 21%;
     }
 
     .services-headline h2 {
