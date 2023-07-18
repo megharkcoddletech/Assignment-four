@@ -70,6 +70,7 @@ nav a {
     width: 85%;
     height: 700px;
     z-index: 0;
+    object-fit: cover;
 }
 
 .banner-image img {
@@ -138,7 +139,6 @@ nav a {
 
 .services {
     width: 100%;
-    margin-bottom: 10%;
 }
 
 .services-headline {
@@ -376,12 +376,11 @@ nav a {
     flex: 1;
     content: "";
     width: 3px;
-    height: 130%;
-    top: 10%;
-    left: 5%;
+    height: 150%;
+    top: 15%;
+    left: 7%;
     background-color: #000;
     position: absolute;
-
 }
 
 .process-contain:last-of-type p::before {
@@ -1177,7 +1176,7 @@ footer .container {
     }
 }
 
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 600px) and (max-width: 769px) {
     .container {
         margin: 0 14px;
     }
@@ -1240,30 +1239,23 @@ footer .container {
         line-height: 30px;
     }
 
-    .banner {
-        width: 100%;
-    }
-
     .banner .banner-image {
-        width: 100%;
+        width: 90%;
         height: 400px;
-        object-fit: contain;
+        object-fit: cover;
         padding-left: 0;
-    }
-
-    .banner-image::after {
-        display: none;
+        margin: auto;
     }
 
     .banner-image::before {
-        display: none;
+        transform: translate(10%, 18%);
     }
 
     .banner-text h2 {
-        font-size: 24px;
+        font-size: 23px;
         width: 30%;
-        line-height: 27px;
-        margin-top: 29px;
+        line-height: 25px;
+        margin-top: 25px;
     }
 
     .banner-text p {
@@ -1381,7 +1373,372 @@ footer .container {
     }
 
     .process-image {
+        width: 80%;
+        height: auto;
+        padding-top: 20px;
+        margin: auto;
+    }
+
+    .process-image img {
         width: 100%;
+        height: 100%;
+    }
+
+    .process-details h2 {
+        font-size: 30px;
+        line-height: 41px;
+        width: 55%;
+    }
+
+    .circle-counter {
+        align-items: center;
+    }
+
+    .process-contain {
+        margin-top: 30px;
+        gap: 0;
+    }
+
+    .counter {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .counter p {
+        margin: -16px;
+        font-size: 16px;
+        line-height: 0;
+        padding-top: 37px;
+    }
+
+
+    .process-list {
+        margin: -10px 0 0 45px;
+    }
+
+    .process-head h3 {
+        font-size: 25px;
+        padding-top: 12px;
+    }
+
+    .process-list p {
+        padding-left: 5%;
+        font-size: 19px;
+        line-height: 21px;
+        padding-bottom: 0px;
+        width: 85%;
+    }
+
+    .process-list p::before {
+        height: 125%;
+        top: 3%;
+        left: -4%;
+    }
+
+    .review-block {
+        display: flex;
+        flex-direction: column;
+        gap: 50%;
+        margin-bottom: 20px;
+    }
+
+    .review-block:first-child {
+        margin-right: 0;
+    }
+
+    .review-headline h2 {
+        width: 60%;
+        font-size: 35px;
+    }
+
+    .review-details {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .review-details i {
+        font-size: 50px;
+    }
+
+    .review-title {
+        width: 50%;
+        line-height: 35px;
+    }
+
+    .review-content {
+        width: 95%;
+        font-size: 19px;
+    }
+
+    .user-row {
+        line-height: 25px;
+        font-size: 19px;
+    }
+
+    .subscribe {
+        align-items: start;
+        margin-top: 0;
+        padding-bottom: 100px;
+    }
+
+    .subscription-alert {
+        font-size: 30px;
+        width: 60%;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .subscription-details {
+        line-height: 20px;
+        font-size: 16px;
+        width: 85%;
+        text-align: left;
+    }
+
+    .subscribe-box {
+        width: 58%;
+        margin-top: -35px;
+        height: 35px;
+    }
+
+    .subscribe-button {
+        width: 50px;
+        height: 30px;
+        margin-top: 1px;
+        flex: 1;
+    }
+
+    .subscribe-box p {
+        padding-top: 6px;
+        font-size: 12px;
+    }
+
+    .subscribe-box input {
+        font-size: 13px;
+        flex: 2;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .footer-about p {
+        width: 44%;
+        margin: auto;
+    }
+
+    .footer-list li h6 {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 600px) {
+    .container {
+        margin: 0 14px;
+    }
+
+    nav {
+        display: flex;
+        gap: 1px;
+    }
+
+    .nav h2 {
+        font-size: 20px;
+    }
+
+    nav li {
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .material-icons {
+        display: none;
+    }
+
+    .checkbutton {
+        display: block;
+        margin-left: -19px;
+    }
+
+    .center-nav {
+        width: 50px;
+        height: 50px;
+        background-color: #68696b;
+        position: fixed;
+        top: 275px;
+        right: -200%;
+        z-index: 1;
+        display: block;
+        text-indent: 20px;
+        padding: 20px;
+    }
+
+    nav input {
+        display: none;
+    }
+
+    .right-nav {
+        margin-left: 247px;
+        font-size: 20px;
+    }
+
+    #checking:checked~.center-nav {
+        right: -66px;
+        top: 76px;
+        width: 50%;
+        height: 30vh;
+        margin-right: 0;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .banner .banner-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        padding-left: 0;
+    }
+
+    .banner-image::after {
+        display: none;
+    }
+
+    .banner-image::before {
+        display: none;
+    }
+
+    .banner-text h2 {
+        font-size: 23px;
+        width: 30%;
+        line-height: 25px;
+        margin-top: 25px;
+    }
+
+    .banner-text p {
+        font-size: 13px;
+        width: 38%;
+        line-height: 13px;
+        margin-top: 11px;
+    }
+
+    .services-headline h2 {
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 76px;
+    }
+
+    .service-description h3 {
+        font-size: 20px;
+    }
+
+    .service-description p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .service-description i {
+        font-size: 20px;
+    }
+
+    .row {
+        gap: 10%;
+    }
+
+    .service-description p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 45%;
+    }
+
+    .about-image {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about h2 {
+        font-size: 35px;
+        width: 55%;
+        line-height: 42px;
+        padding-top: 20px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .about-text-p {
+        line-height: 25px;
+        font-size: 18px;
+        width: 92%;
+    }
+
+    .about-details-main {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .about-details {
+        flex-direction: column;
+        gap: 20px;
+        left: 0;
+    }
+
+    .about-count {
+        flex-direction: column;
+        font-size: 44px;
+        gap: 40px;
+    }
+
+    .about-count-p {
+        font-size: 20px;
+    }
+
+    .about a {
+        font-size: 25px;
+    }
+
+    .button {
+        padding: 9px 21px;
+    }
+
+    .button-arrow i {
+        font-size: 35px;
+        margin-left: -7px;
+        margin-top: -2px;
+    }
+
+    .process {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 30%;
+    }
+
+    .process-image {
+        width: 80%;
         height: auto;
         padding-top: 20px;
         margin: auto;
@@ -2004,7 +2361,7 @@ footer .container {
 
     .banner .banner-image {
         width: 100%;
-        height: 250px;
+        height: inherit;
         object-fit: cover;
         padding-left: 0;
     }
@@ -2033,7 +2390,7 @@ footer .container {
 
     .services-headline {
         width: 100%;
-        margin-top: 21%;
+        margin-top: 10%;
     }
 
     .services-headline h2 {
@@ -2094,7 +2451,7 @@ footer .container {
     }
 
     .about-image {
-        width: 100%;
+        width: 80%;
         height: 530px;
         margin: auto;
         padding-bottom: 20px;
@@ -2166,7 +2523,7 @@ footer .container {
     }
 
     .process-image {
-        width: 100%;
+        width: 80%;
         height: 700px;
         margin: auto;
         padding-top: 20px;
