@@ -135,7 +135,6 @@ nav a {
     width: 38%;
     line-height: 30px;
     margin-top: 20px;
-    text-align: justify;
 }
 
 .services {
@@ -197,7 +196,6 @@ nav a {
     width: 100%;
     font-size: 20px;
     flex: 1;
-    text-align: justify;
 }
 
 .service-description i {
@@ -212,7 +210,7 @@ nav a {
 .about-image {
     flex: 1;
     width: 500px;
-    height: 800px;
+    height: 630px;
 }
 
 .about-image img {
@@ -393,7 +391,7 @@ nav a {
 .process-image {
     flex: 1;
     object-fit: cover;
-    height: 1000px;
+    height: 870px;
 }
 
 .process-image img {
@@ -560,15 +558,16 @@ footer .container {
     flex: 1;
     position: absolute;
     background-color: #ffffff;
-    width: 35%;
+    width: 42%;
     height: 16%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: -2% auto;
     box-shadow: 0px 0px 2px 2px #e6e6e6;
     left: 50%;
     transform: translateX(-50%);
+    gap: 50px;
 }
 
 .footer-list {
@@ -581,16 +580,14 @@ footer .container {
 }
 
 .subscribe-box input {
-    flex: 1;
     border: 0px;
     padding-left: 0px;
-    font-size: 20px;
+    font-size: 33px;
 }
 
 .subscribe-button {
-    flex: 1;
     background-color: #5a6e79;
-    width: 70px;
+    width: 30%;
     height: 60px;
     color: #fdfeff;
     margin-top: 5px;
@@ -655,13 +652,21 @@ footer .container {
     }
 
     .banner-image::before {
-        transform: translate(44%, 15%);
+        transform: translate(61%, 15%);
+        width: 12%;
+        height: 17%;
     }
-
+    .banner-image::after{
+        width: 13%;
+        height: 17%;
+        transform: translate(-5%, 18%);
+    }
     .banner .banner-image {
         padding-left: 115px;
     }
-
+    .banner-text{
+        top: 31%;
+    }
     .services-headline h2 {
         font-size: 45px;
         line-height: 50px;
@@ -789,13 +794,15 @@ footer .container {
 
     .subscribe-box {
         width: 54%;
-        height: 15%;
-        margin: -5% auto;
+        height: 10%;
+        margin: -3% auto;
         box-shadow: 0px 0px 2px 2px #e6e6e6;
     }
-
+    .subscribe-box input{
+        font-size: 22px;
+    }
     .subscribe-button {
-        height: 65%;
+        height: 83%;
     }
 
     .subscribe-box p {
@@ -813,9 +820,14 @@ footer .container {
     }
 
     .banner-image::before {
-        transform: translate(56%, 15%);
+        transform: translate(65%, 15%);
+        width: 13%;
+        height: 18%;
     }
-
+    .banner-image::after{
+        width: 13%;
+        height: 19%;
+    }
     .banner .banner-image {
         padding-left: 115px;
         height: 600px;
@@ -905,18 +917,38 @@ footer .container {
     .process-image {
         height: 800px;
     }
-
     .review h2 {
         font-size: 35px;
         width: 33%;
     }
-
+    
     .left-right-arrow {
         padding-top: 55px;
         margin-left: auto;
         font-size: 35px;
     }
 
+    .review-details{
+        padding: 35px;
+    }
+    .review-details i{
+        font-size: 45px;
+    }
+    .review-title{
+        font-size: 25px;
+        line-height: 32px;
+        padding-bottom: 20px;
+    }
+    .review-content {
+        line-height: 20px;
+        padding-bottom: 21px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .user-row{
+        line-height: 17px;
+        font-size: 14px;
+    }    
     .subscription-alert {
         font-size: 35px;
     }
@@ -932,7 +964,9 @@ footer .container {
         height: 11%;
         margin: -5% auto;
     }
-
+    .subscribe-box input{
+        font-size: 21px;
+    }
     .subscribe-button {
         height: 44px;
     }
@@ -960,12 +994,28 @@ footer .container {
     }
 
     .banner .banner-image {
-        height: 500px;
+        height: 430px;
         padding-left: 90px;
     }
-
+    .banner-image::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/DownArrow.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #5a6e79;
+        background-size: 43px 45px;
+        bottom: 0;
+        right: 0;
+        transform: translate(-15%, 16%);
+        width: 11%;
+        height: 18%;
+        z-index: 1;
+    }
     .banner-image::before {
-        transform: translate(47%, 15%);
+        transform: translate(74%, 18%);
+        width: 11%;
+        height: 18%;
     }
 
     .banner-text {
@@ -973,14 +1023,17 @@ footer .container {
     }
 
     .banner-text h2 {
-        font-size: 36px;
-        width: 35%;
-        line-height: 37px;
-        margin-top: 30px;
+        font-size: 25px;
+        width: 30%;
+        line-height: 30px;
+        margin-top: 20px;
     }
 
     .banner-text p {
-        font-size: 17px;
+        font-size: 15px;
+        line-height: 19px;
+        width: 34%;
+        margin-top: 9px;
     }
 
     .services {
@@ -1008,22 +1061,24 @@ footer .container {
     .service-description p {
         line-height: 27px;
         font-size: 16px;
+        text-align: left;
     }
-
     .about h2 {
         font-size: 30px;
         line-height: 45px;
     }
 
     .about-text-p {
-        line-height: 26px;
+        line-height: 22px;
         font-size: 16px;
     }
 
     .about-count {
-        font-size: 55px;
+        font-size: 40px;
     }
-
+    .about-text{
+        gap: 40px;
+    }
     .about-count-p {
         font-size: 20px;
     }
@@ -1038,11 +1093,11 @@ footer .container {
     }
 
     .about-image {
-        height: 550px;
+        height: 460px;
     }
 
     .process-image {
-        height: 749px;
+        height: 600px;
     }
 
     .process-details h2 {
@@ -1061,11 +1116,13 @@ footer .container {
 
     .process-head h3 {
         font-size: 27px;
+        padding-bottom: 15px;
     }
 
     .process-list p {
-        line-height: 25px;
+        line-height: 20px;
         font-size: 15px;
+        padding-left: 18%;
     }
 
     .counter p {
@@ -1077,12 +1134,32 @@ footer .container {
         transform: translate(24px, 10px);
         height: 110%;
     }
-
+    .review-details{
+        padding: 28px;
+    }
+    .review-details i{
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
     .review h2 {
         font-size: 30px;
-        width: 32%;
+        width: 35%;
     }
-
+    .review-title{
+        font-size: 25px;
+        line-height: 33px;
+        padding-bottom: 20px;
+    }
+    .review-content{
+        line-height: 20px;
+        padding-bottom: 25px;
+        font-size: 13px;
+        width: 100%;
+    }
+    .subscribe{
+        margin-top: 80px;
+        padding-bottom: 100px;
+    }
     .subscription-alert {
         font-size: 30px;
     }
@@ -1116,11 +1193,10 @@ footer .container {
 
     .footer-about p {
         font-size: 16px;
-        width: 85%;
+        width: 79%;
     }
 }
-
-@media (min-width: 426px) and (max-width: 700px) {
+@media (min-width: 600px) and (max-width: 700px) {
     .container {
         margin: 0 14px;
     }
@@ -1178,7 +1254,7 @@ footer .container {
 
     .banner .banner-image {
         width: 100%;
-        height: 360px;
+        height: 100%;
         object-fit: cover;
         padding-left: 0;
     }
@@ -1190,19 +1266,30 @@ footer .container {
     .banner-image::before {
         display: none;
     }
-
+    .banner-text{
+        top: 36%;
+    }
+    .banner-text::before {
+        content: '';
+        position: absolute;
+        background-color: #5a6e79;
+        width: 130%;
+        height: 110%;
+        transform: translate(-70%);
+        z-index: -1;
+    }
     .banner-text h2 {
-        font-size: 23px;
+        font-size: 25px;
         width: 30%;
-        line-height: 25px;
-        margin-top: 25px;
+        line-height: 30px;
+        margin-top: 20px;
     }
 
     .banner-text p {
-        font-size: 13px;
+        font-size: 15px;
+        line-height: 19px;
         width: 38%;
-        line-height: 13px;
-        margin-top: 11px;
+        margin-top: 9px;
     }
 
     .services-headline {
@@ -1210,19 +1297,14 @@ footer .container {
     }
 
     .services-headline h2 {
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 30px;
+        line-height: 36px;
         padding-left: 76px;
         width: 60%;
     }
 
     .service-description h3 {
         font-size: 20px;
-    }
-
-    .service-description p {
-        font-size: 16px;
-        line-height: 22px;
     }
 
     .service-description i {
@@ -1236,6 +1318,7 @@ footer .container {
     .service-description p {
         line-height: 20px;
         font-size: 14px;
+        width: 120%;
     }
 
     .about {
@@ -1246,7 +1329,7 @@ footer .container {
 
     .about-image {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .about-image img {
@@ -1255,9 +1338,9 @@ footer .container {
     }
 
     .about h2 {
-        font-size: 35px;
-        width: 55%;
-        line-height: 42px;
+        font-size: 30px;
+        width: 52%;
+        line-height: 35px;
         padding-top: 20px;
     }
 
@@ -1268,9 +1351,9 @@ footer .container {
     }
 
     .about-text-p {
-        line-height: 25px;
-        font-size: 18px;
-        width: 92%;
+        line-height: 20px;
+        font-size: 17px;
+        width: 100%;
         text-align: justify;
     }
 
@@ -1310,7 +1393,7 @@ footer .container {
 
     .process-image {
         width: 100%;
-        height: auto;
+        height: 100%;
         padding-top: 20px;
     }
 
@@ -1354,8 +1437,9 @@ footer .container {
 
     .process-list p {
         padding-left: 7%;
-        font-size: 19px;
-        width: 85%;
+        font-size: 16px;
+        width: 92%;
+        line-height: 20px;
     }
 
     .process-list p::before {
@@ -1374,32 +1458,39 @@ footer .container {
     }
 
     .review-details {
-        width: 80%;
-        margin: 20px auto;
+        width: 92%;
+        margin: 10px auto;
+        padding: 23px;
     }
 
     .review-details i {
-        font-size: 50px;
+        font-size: 45px;
+        padding-bottom: 10px;
     }
 
     .review-title {
-        width: 50%;
+        width: 60%;
         line-height: 35px;
+        padding-bottom: 12px;
+        font-size: 26px;
     }
 
     .review-content {
         width: 95%;
-        font-size: 19px;
+        font-size: 15px;
+        line-height: 21px;
+        padding-bottom: 20px;
     }
 
     .user-row {
-        line-height: 25px;
-        font-size: 19px;
+        line-height: 17px;
+        font-size: 13px;
+        margin-top: 10px;
     }
 
     .subscribe {
         align-items: start;
-        margin-top: 0;
+        margin-top: 35px;
         padding-bottom: 100px;
     }
 
@@ -1417,14 +1508,13 @@ footer .container {
         margin: auto;
     }
 
-    .subscribe-box {
-        width: 58%;
+   .subscribe-box {
+        width: 80%;
         margin-top: -35px;
-        height: 35px;
+        height: 29px;
     }
 
     .subscribe-button {
-        width: 50px;
         height: 30px;
         margin-top: 1px;
         flex: 1;
@@ -1437,25 +1527,372 @@ footer .container {
 
     .subscribe-box input {
         font-size: 13px;
-        flex: 2;
+        flex: 1;
     }
 
     .footer-list {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        padding: 50px 0;
+        gap: 20px;
+    }
+    .footer-list li:first-child{
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .footer-list ul a{
+        padding-top: 10px;
+    }
+    .footer-about p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .social-media{
+        padding-top: 30px;
+    }
+}
+@media (min-width: 426px) and (max-width: 600px) {
+    .container {
+        margin: 0 14px;
+    }
+
+    .nav h2 {
+        font-size: 20px;
+    }
+
+    nav li {
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .material-icons {
+        display: none;
+    }
+
+    .checkbutton {
+        display: block;
+        margin-left: -9px;
+    }
+
+    .center-nav {
+        background-color: #68696b;
+        position: fixed;
+        top: 275px;
+        right: -200%;
+        z-index: 1;
+        display: block;
+        text-indent: 20px;
+        padding: 20px;
+    }
+
+    nav input {
+        display: none;
+    }
+
+    .right-nav {
+        margin-left: 247px;
+        font-size: 20px;
+    }
+
+    #checking:checked~.center-nav {
+        right: -66px;
+        top: 76px;
+        width: 35%;
+        height: 30vh;
+        margin-right: 0;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .banner .banner-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-left: 0;
+    }
+
+    .banner-image::after {
+        display: none;
+    }
+
+    .banner-image::before {
+        display: none;
+    }
+
+    .banner-text h2 {
+        font-size: 23px;
+        width: 30%;
+        line-height: 25px;
+        margin-top: 25px;
+    }
+
+    .banner-text p {
+        font-size: 13px;
+        width: 38%;
+        line-height: 13px;
+        margin-top: 11px;
+    }
+
+    .services-headline {
+        width: 100%;
+    }
+
+    .services-headline h2 {
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 76px;
+        width: 60%;
+    }
+
+    .service-description h3 {
+        font-size: 20px;
+    }
+    .service-description i {
+        font-size: 20px;
+    }
+
+    .row {
+        gap: 10%;
+    }
+
+    .service-description p {
+        line-height: 20px;
+        font-size: 14px;
+        width: 122%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 45%;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about h2 {
+        font-size: 35px;
+        width: 62%;
+        line-height: 42px;
+        padding-top: 20px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .about-text-p {
+        line-height: 20px;
+        font-size: 17px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .about-details-main {
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .about-count {
+        font-size: 44px;
+    }
+
+    .about-count-p {
+        font-size: 20px;
+    }
+
+    .about a {
+        font-size: 25px;
+    }
+
+    .button {
+        padding: 9px 21px;
+    }
+
+    .button-arrow i {
+        font-size: 35px;
+        margin-left: -7px;
+        margin-top: -2px;
+    }
+
+    .process {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        gap: 30%;
+    }
+
+    .process-image {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .process-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .process-details h2 {
+        font-size: 30px;
+        line-height: 41px;
+        width: 72%;
+    }
+
+    .process-contain {
         margin-top: 30px;
     }
 
-    .footer-about p {
-        width: 63%;
-        margin: auto;
-        text-align: center;
+    .counter {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
     }
 
-    .footer-list li h6 {
-        margin-bottom: 0px;
+    .counter p {
+        margin: -16px;
+        font-size: 16px;
+        line-height: 0;
+        padding-top: 37px;
+    }
+
+
+    .process-list {
+        margin: -10px 0 0 45px;
+    }
+
+    .process-head h3 {
+        font-size: 25px;
+        padding-top: 12px;
+    }
+
+    .process-list p {
+        padding-left: 7%;
+        font-size: 16px;
+        line-height: 20px;
+        width: 91%;
+    }
+
+    .process-list p::before {
+        height: 110%;
+        transform: translate(-20px, 10px);
+    }
+
+    .review-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-headline h2 {
+        width: 60%;
+        font-size: 35px;
+    }
+
+    .review-details {
+        width: 90%;
+        margin: 10px auto;
+        padding: 25px;
+    }
+
+    .review-details i {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    .review-title {
+        width: 50%;
+        line-height: 33px;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .review-content {
+        width: 100%;
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 20px;
+    }
+
+    .user-row {
+        line-height: 16px;
+        font-size: 13px;
+    }
+
+    .subscribe {
+        align-items: start;
+        margin-top: 0;
+        padding-bottom: 100px;
+    }
+
+    .subscription-alert {
+        font-size: 30px;
+        width: 70%;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+
+    .subscription-details {
+        line-height: 18px;
+        font-size: 14px;
+        width: 85%;
+        margin: auto;
+    }
+
+    .subscribe-box {
+        width: 80%;
+        margin-top: -35px;
+        height: 29px;
+    }
+
+    .subscribe-button {
+        height: 30px;
+        margin-top: 1px;
+        flex: 1;
+    }
+
+    .subscribe-box p {
+        padding-top: 6px;
+        font-size: 12px;
+    }
+
+    .subscribe-box input {
+        font-size: 13px;
+        flex: 1;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 20px;
+    }
+    .footer-list li:first-child{
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .footer-list ul a{
+        padding-top: 10px;
+    }
+    .footer-about p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .social-media{
+        padding-top: 30px;
     }
 }
 
@@ -1504,7 +1941,7 @@ footer .container {
     #checking:checked~.center-nav {
         right: -66px;
         top: 76px;
-        width: 50%;
+        width: 40%;
         height: 30vh;
         margin-right: 0;
         text-align: left;
@@ -1517,7 +1954,7 @@ footer .container {
 
     .banner .banner-image {
         width: 100%;
-        height: 290px;
+        height: 100%;
         object-fit: cover;
         padding-left: 0;
     }
@@ -1529,23 +1966,32 @@ footer .container {
     .banner-image::before {
         display: none;
     }
-
-    .banner-text h2 {
-        font-size: 20px;
-        width: 38%;
-        line-height: 25px;
-        margin-top: 7px;
+    .banner-text {
+        top: 102%;
     }
-
+    .banner-text::before {
+        width: 100%;
+        height: 120%;
+        transform: translate(0%);
+    }
+    .banner-text h2 {
+        font-size: 17px;
+        width: 80%;
+        line-height: 20px;
+        margin: 5px auto;
+        text-align: center;
+    }
     .banner-text p {
-        font-size: 10px;
-        width: 35%;
-        line-height: 16px;
-        margin-top: 9px;
+        font-size: 11px;
+        width: 57%;
+        line-height: 13px;
+        text-align: center;
+        margin: auto;
     }
 
     .services-headline {
         width: 100%;
+        margin-top: 27%;
     }
 
     .services-headline h2 {
@@ -1595,7 +2041,9 @@ footer .container {
     .service-description p {
         font-size: 15px;
         padding-bottom: 20px;
-        line-height: 25px;
+        line-height: 20px;
+        width: 160%;
+        text-align: start;
     }
 
     .about {
@@ -1630,9 +2078,9 @@ footer .container {
 
     .about-text-p {
         text-align: justify;
-        line-height: 23px;
+        line-height: 20px;
         font-size: 14px;
-        width: 97%;
+        width: 100%;
     }
 
     .about-details-main {
@@ -1679,7 +2127,7 @@ footer .container {
 
     .process-image {
         width: 100%;
-        height: 500px;
+        height: 50%;
         padding-top: 20px;
     }
 
@@ -1723,30 +2171,32 @@ footer .container {
 
     .process-list p {
         padding-left: 5%;
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 14px;
+        line-height: 18px;
         padding-bottom: 0px;
-        width: 93%;
+        width: 94%;
     }
 
     .process-list p::before {
         height: 100%;
         transform: translate(-27px, 10px);
     }
-
     .review h2 {
         font-size: 35px;
-        width: 37%;
+        width: 85%;
     }
 
     .left-right-arrow {
-        font-size: 25px;
+        font-size: 16px;
+        padding-top: 40px;
     }
 
     .review-block {
         display: flex;
         flex-direction: column;
         gap: 50%;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
     .review-block:first-child {
@@ -1758,31 +2208,38 @@ footer .container {
     }
 
     .review-headline h2 {
-        width: 60%;
+        width: 65%;
         font-size: 25px;
     }
 
     .review-details {
         margin-bottom: 20px;
+        padding: 30px;
     }
 
     .review-details i {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .review-title {
-        width: 102%;
-        line-height: 35px;
+        width: 85%;
+        line-height: 33px;
+        font-size: 23px;
+        font-weight: 700;
+        padding-bottom: 15px;
     }
 
     .review-content {
         width: 95%;
-        font-size: 13px;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 25px;
     }
 
     .user-row {
         line-height: 25px;
         font-size: 14px;
+        margin-top: 12px;
     }
 
     .subscribe {
@@ -1802,7 +2259,7 @@ footer .container {
     }
 
     .subscribe-box {
-        width: 58%;
+        width: 80%;
         margin-top: -35px;
         height: 29px;
     }
@@ -1826,19 +2283,23 @@ footer .container {
     .footer-list {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 30px;
+        padding: 50px 0;
+        gap: 20px;
     }
-
+    .footer-list li:first-child{
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .footer-list ul a{
+        padding-top: 10px;
+    }
     .footer-about p {
-        width: 85%;
-        text-align: center;
-        margin: auto;
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
     }
-
-    .footer-list li h6 {
-        margin-bottom: 0px;
+    .social-media{
+        padding-top: 30px;
     }
 }
 
@@ -1922,24 +2383,33 @@ footer .container {
     .banner-image::before {
         display: none;
     }
-
+    .banner-text{
+        top: 105%;
+    }
+    .banner-text::before{
+        width: 105%;
+        height: 111%;
+        transform: translate(-3%);
+    }
     .banner-text h2 {
         font-size: 17px;
-        width: 39%;
+        width: 90%;
         line-height: 20px;
-        margin-top: 11px;
+        margin: 5px auto;
+        text-align: center;
     }
 
     .banner-text p {
-        font-size: 9px;
-        width: 38%;
-        line-height: 10px;
-        margin-top: 5px;
+        font-size: 11px;
+        width: 88%;
+        line-height: 14px;
+        text-align: center;
+        margin: auto;
     }
 
     .services-headline {
         width: 100%;
-        margin-top: 10%;
+        margin-top: 35%;
     }
 
     .services-headline h2 {
@@ -1990,6 +2460,7 @@ footer .container {
         font-size: 15px;
         padding-bottom: 20px;
         line-height: 25px;
+        width: 150%;
     }
 
     .about {
@@ -2001,7 +2472,7 @@ footer .container {
 
     .about-image {
         width: 100%;
-        height: 530px;
+        height: 100%;
         padding-bottom: 20px;
     }
 
@@ -2073,7 +2544,7 @@ footer .container {
 
     .process-image {
         width: 100%;
-        height: 700px;
+        height: 300px;
         padding-top: 20px;
     }
 
@@ -2117,11 +2588,9 @@ footer .container {
     }
 
     .process-list p {
-        text-align: justify;
         padding-left: 5%;
         font-size: 14px;
-        line-height: 21px;
-        padding-bottom: 0px;
+        line-height: 20px;
         width: 93%;
     }
 
@@ -2163,25 +2632,32 @@ footer .container {
 
     .review-details {
         margin-bottom: 20px;
+        padding: 30px;
     }
 
     .review-details i {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .review-title {
-        width: 102%;
-        line-height: 35px;
+        width: 85%;
+        line-height: 33px;
+        font-size: 23px;
+        font-weight: 700;
+        padding-bottom: 15px;
     }
 
     .review-content {
         width: 95%;
-        font-size: 13px;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 25px;
     }
 
     .user-row {
         line-height: 25px;
         font-size: 14px;
+        margin-top: 12px;
     }
 
     .subscribe {
@@ -2191,20 +2667,20 @@ footer .container {
 
     .subscription-alert {
         text-align: center;
-        font-size: 25px;
+        font-size: 23px;
         width: 100%;
         padding-bottom: 15px;
     }
 
     .subscription-details {
         text-align: center;
-        line-height: 22px;
+        line-height: 18px;
         font-size: 13px;
-        width: 100%;
+        width: 89%;
     }
 
     .subscribe-box {
-        width: 58%;
+        width: 80%;
         margin-top: -29px;
         height: 20px;
     }
@@ -2228,17 +2704,30 @@ footer .container {
     .footer-list {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: start;
+        text-align: left;
         margin-top: 30px;
+        padding: 20px 0;
+        gap: 18px;
     }
-
+    .footer-list li:first-child{
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+    .footer-list ul a{
+        padding-top: 10px;
+    }
     .footer-about p {
         width: 100%;
-        text-align: center;
+        padding-top: 10px;
+        line-height: 16px;
+        font-size: 14px;
     }
 
     .footer-list li h6 {
         margin-bottom: 0px;
+    }
+    .social-media{
+        padding-top: 20px;
     }
 }
