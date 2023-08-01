@@ -286,7 +286,7 @@ nav a {
 .button-arrow i {
     position: absolute;
     margin-left: -12px;
-    margin-top: 2px;
+    margin-top: -6px;
     font-size: 50px;
 }
 
@@ -365,7 +365,7 @@ nav a {
     flex: 1;
     line-height: 28px;
     font-size: 21px;
-    padding-left: 16%;
+    padding-left: 18%;
     width: 65%;
     color: #000;
     position: relative;
@@ -374,8 +374,8 @@ nav a {
 
 .process-list p::before {
     content: "";
-    width: 3px;
-    height: 150%;
+    width: 2px;
+    height: 120px;
     transform: translate(42px, 10px);
     top: 0;
     left: 0;
@@ -389,8 +389,7 @@ nav a {
 
 .process-image {
     flex: 1;
-    object-fit: cover;
-    height: 870px;
+    height: 800px;
 }
 
 .process-image img {
@@ -553,7 +552,6 @@ footer .container {
 
 .subscribe-box {
     padding: 10px;
-    align-items: center;
     flex: 1;
     position: absolute;
     background-color: #ffffff;
@@ -581,7 +579,7 @@ footer .container {
 .subscribe-box input {
     border: 0px;
     padding-left: 0px;
-    font-size: 33px;
+    font-size: 20px;
 }
 
 .subscribe-button {
@@ -769,12 +767,12 @@ footer .container {
     }
 
     .process-list p::before {
-        height: 130%;
+        height: 90px;
         transform: translate(30px, 10px);
     }
 
     .process-image {
-        height: 750px;
+        height: 730px;
     }
 
     .review h2 {
@@ -929,11 +927,11 @@ footer .container {
 
     .process-list p::before {
         transform: translate(27px, 10px);
-        height: 126%;
+        height: 100px;
     }
 
     .process-image {
-        height: 710px;
+        height: 680px;
     }
 
     .review h2 {
@@ -1144,7 +1142,7 @@ footer .container {
 
     .process-list p::before {
         transform: translate(24px, 10px);
-        height: 93%;
+        height: 70px;
     }
 
     .review-details {
@@ -1347,7 +1345,7 @@ footer .container {
     }
 
     .about-image {
-        width: 75%;
+        width: 85%;
     }
 
     .about h2 {
@@ -1398,7 +1396,7 @@ footer .container {
     }
 
     .process-image {
-        width: 75%;
+        width: 85%;
         padding-top: 20px;
     }
 
@@ -1442,7 +1440,7 @@ footer .container {
     }
 
     .process-list p::before {
-        height: 120%;
+        height: 50px;
         transform: translate(-20px, 10px);
     }
 
@@ -1759,7 +1757,7 @@ footer .container {
     }
 
     .process-list p::before {
-        height: 110%;
+        height: 70px;
         transform: translate(-20px, 10px);
     }
 
@@ -2096,7 +2094,7 @@ footer .container {
     }
 
     .process-list p::before {
-        height: 110%;
+        height: 70px;
         transform: translate(-27px, 5px);
     }
 
@@ -2443,7 +2441,7 @@ footer .container {
     }
 
     .process-list p::before {
-        height: 110%;
+        height: 95px;
         transform: translate(-27px, 5px);
     }
 
@@ -2468,7 +2466,7 @@ footer .container {
 
     .review-details {
         margin-bottom: 20px;
-        padding: 30px;
+        padding: 10px;
     }
 
     .review-details i {
