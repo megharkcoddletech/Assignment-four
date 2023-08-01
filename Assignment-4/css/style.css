@@ -1757,7 +1757,7 @@ footer .container {
     }
 
     .process-list p::before {
-        height: 70px;
+        height: 56px;
         transform: translate(-20px, 10px);
     }
 
@@ -2441,7 +2441,7 @@ footer .container {
     }
 
     .process-list p::before {
-        height: 95px;
+        height: 80px;
         transform: translate(-27px, 5px);
     }
 
